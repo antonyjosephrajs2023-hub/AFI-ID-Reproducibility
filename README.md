@@ -1,28 +1,48 @@
-# AFI-ID-Reproducibility
+# AFI-ID Reproducibility Package
 
-Pipeline:
+This repository contains the implementation of:
+
+AFI-ID: Adaptive Feature Intelligence for Intrusion Detection
+
+## Pipeline
+
 1. Data preprocessing
-2. AFI feature selection
+2. Adaptive Feature Intelligence (AFI)
 3. Logistic Regression
 4. Extra Trees
 5. XGBoost
 6. Attention-BiLSTM stacking
 
-Run:
+## Environment
+
+Python 3.10
+
+## Installation
+
+pip install -r requirements.txt
+
+## Dataset
+
+Download CICIDS2017 and place CSV files inside:
+
+./dataset/
+
+## Run
 
 python AFI_ID.py
 
-Environment:
-Python 3.10
+## Outputs
 
-Dataset:
-Place CICIDS2017 CSV files inside ./dataset/
-
-Output:
 - Selected features
 - Training logs
-- Classification metrics
-- Accuracy, MCC, Kappa, Log Loss
+- Accuracy
+- Precision
+- Recall
+- F1-score
+- MCC
+- Cohen's Kappa
+- Log Loss
 
-Reproducibility:
+## Reproducibility
+
 Random seed = 42
